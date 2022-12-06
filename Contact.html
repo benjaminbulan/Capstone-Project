@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f772be19b1.js" crossorigin="anonymous"></script>
+    <style>
+        .btnshp{
+           position: absolute;
+           left: 10%;
+           top: 45%;
+        }
+
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .hero-image {
+          background-image:  url("banner.jpg");
+          height: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+
+        .hero-image2 {
+          background-image:  url("brand-banner-logo.jpg");
+          height: 30%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+        
+        .hero-text button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 10px 25px;
+          color: black;
+          background-color: #ddd;
+          cursor: pointer;
+        }
+        
+     /* unvisited link */
+a:link {
+  color: Black; 
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: gray;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+        </style>
+    
+    <title>Gadget Store</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <body>
+
+        
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <a href="#" class="logo"><img src="Logo.jpg" alt="logo"> </a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="SHOP.html">SHOP</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            <li><a href="Login-Signup/index.html"  target="_blank">Login</a></li>
+            <li><a href="Login-Signup/Signup.html"  target="_blank">Signup</a></li>
+            <input type="text" id="lname" name="lname"  size="15" value="Search">
+
+            <!-- Cart-Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+         
+
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content">
+
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <a href="checkout/index.html"><button type="button" class="btn-buy">Buy Now</button></a>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+ 
+            </div>
+        </div>
+    </header>
+    <!-- Shop -->
+    <section class="shop container"><br>
+        <h2 class="section-title">Contact US</h2>
+        <!-- Content -->
+        <form action="/action_page.php">
+          <label for="fname" size="50"><b></b>First name:</label><br>
+          <input type="text" id="fname" name="fname" size="50" value="Your Name"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"  size="50" value="Your Last Name"><br><br>
+          <label for="lname">Email Address</label><br>
+          <input type="text" id="lname" name="lname"  size="30" value="Your Email"><br><br>
+
+   
+    <textarea id="subject" name="subject" placeholder="Write something.."  rows="10" cols="50" style="height:200px"></textarea><BR>
+
+      <button type="button" class="btn btn-dark">Submit</button>
+
+        </form> 
+        
+    </section>
+
+  
+
+
+</div>
+</div>
+</div>
+<!-- Hero -->
+
+
+    <!-- Link TO JS -->
+    <script src="js/main.js"></script>
+    
+</body>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span></span>
+      </div>
+      <!-- Left -->
+  
+     
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <a href="index.html" class="logo"><img src="Logo.jpg" alt="logo"> </a>
+            </h6>
+           
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="SHOP.html" class="text-reset">SHOP</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">FAQ</a>
+            </p>
+            <p>
+            
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              
+            </h6>
+            <p>
+              <a href="Login-Signup/index.html" class="text-reset" target="_blank">Login</a>
+            </p>
+            <p>
+              <a href="Login-Signup/Signup.html" class="text-reset" target="_blank">Signup</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>  Manila,PH</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@gagetstore.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 63 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 63 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2022 Copyright:
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</html>
